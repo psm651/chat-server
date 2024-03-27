@@ -1,8 +1,9 @@
-package com.toy.chat;
+package com.toy.chat.global.config;
 
 import com.fasterxml.jackson.databind.JsonSerializer;
 import com.fasterxml.jackson.databind.ser.std.StringSerializer;
 import com.google.common.collect.ImmutableMap;
+import com.toy.chat.Message;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

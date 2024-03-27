@@ -1,2 +1,7 @@
+
 mongodb:
   client: mongodb://127.0.0.1:27017
+  name: mongodb
+spring:
+  jwt:
+    secret: test1234test1234test1234test1234

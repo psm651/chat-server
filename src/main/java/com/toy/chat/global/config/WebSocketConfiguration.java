@@ -1,4 +1,4 @@
-package com.toy.chat;
+package com.toy.chat.global.config;
 
 import com.toy.chat.global.config.interceptor.StompHandler;
 import lombok.RequiredArgsConstructor;

@@ -1,4 +1,4 @@
-package com.toy.chat;
+package com.toy.chat.security.properties;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -6,8 +6,7 @@ import org.springframework.stereotype.Component;
 
 @Data
 @Component
-@ConfigurationProperties(prefix = "mongodb")
-public class MongoProperties {
-    String client;
-    String name;
+@ConfigurationProperties(prefix = "spring.jwt")
+public class JwtProperties {
+    private String secret;
 }

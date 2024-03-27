@@ -1,6 +1,7 @@
-package com.toy.chat;
+package com.toy.chat.global.config;
 
 import com.google.common.collect.ImmutableMap;
+import com.toy.chat.Message;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.springframework.context.annotation.Bean;
