@@ -1,7 +1,31 @@
-
+spring:
+  datasource:
+    url: jdbc:h2:mem:test;MODE=MySQL;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+    driver-class-name: org.h2.Driver
+  jpa:
+    generate-ddl: true
+    properties:
+      hibernate:
+        ddl-auto: create
+        dialect: org.hibernate.dialect.H2Dialect
+        default_batch_fetch_size: 500
+        #        show_sql: true
+        format_sql: true
+        logging:
+          level:
+            org.hibernate.SQL: debug
+            com.zaxxer.hikari.HikariConfig: DEBUG
+            com.zaxxer.hikari: TRACE
+  h2:
+    console:
+      enabled: true
+  jwt:
+    secret: U3pTcHJvSmVjdCQyIzEtU3pTcHJvSmVjdCQyIzEtU3pTcHJvSmVjdCQyIzE=
+    expirationTime: 3600000
 mongodb:
   client: mongodb://127.0.0.1:27017
   name: mongodb
-spring:
-  jwt:
-    secret: test1234test1234test1234test1234
+value:
+  kafka:
+    topic: chat

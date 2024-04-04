@@ -1,7 +1,7 @@
 package com.toy.chat.global.config;
 
 import com.google.common.collect.ImmutableMap;
-import com.toy.chat.Message;
+import com.toy.chat.chat.dto.chat.Message;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.springframework.context.annotation.Bean;
@@ -37,7 +37,7 @@ public class ListenerConfiguration {
         Map<String, Object> consumerConfigurations =
                 ImmutableMap.<String, Object>builder()
                         .put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092")
-                        .put(ConsumerConfig.GROUP_ID_CONFIG, "adopt")
+                        .put(ConsumerConfig.GROUP_ID_CONFIG, "chat")
                         .put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class)
                         .put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, deserializer)
                         .put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "latest")

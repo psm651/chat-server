@@ -1,5 +1,7 @@
-package com.toy.chat;
+package com.toy.chat.chat.dto.chat;
 
+
+import com.toy.chat.Chatting;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
